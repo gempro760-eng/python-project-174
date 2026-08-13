@@ -1,18 +1,18 @@
-# Gendiff (Hexlet Project)
+# Gendiff (Proyecto Hexlet)
 
 [![Actions Status](../../workflows/hexlet-check/badge.svg)](../../actions)
 
-## Description
-Gendiff is a command-line tool and Python library that compares two configuration files (JSON) and outputs the differences in a clean, readable format.
+## Descripción
+Gendiff es una herramienta de línea de comandos y biblioteca de Python que compara dos archivos de configuración (JSON y YAML) y muestra las diferencias en un formato limpio y ordenado.
 
-## Features
-- Compares JSON configuration files.
-- Displays keys sorted alphabetically.
-- Clearly highlights added (`+`), removed (`-`), and unchanged settings.
+## Características
+- Compara archivos de configuración en formato **JSON** y **YAML** (`.yaml`, `.yml`).
+- Muestra las claves ordenadas alfabéticamente.
+- Resalta claramente configuraciones agregadas (`+`), eliminadas (`-`) y sin cambios.
 
-## Installation
+## Instalación
 
-Clone the repository and install dependencies using `uv`:
+Clona el repositorio e instala las dependencias usando `uv`:
 
 ```bash
 git clone [https://github.com/gempro760-eng/python-project-174.git](https://github.com/gempro760-eng/python-project-174.git)
