@@ -1,3 +1,5 @@
+import json
+
 from gendiff import generate_diff
 
 
@@ -29,3 +31,14 @@ def test_generate_diff_plain():
         expected = f.read().strip()
 
     assert generate_diff(file1, file2, "plain") == expected
+
+
+def test_generate_diff_json_format():
+    file1 = "tests/fixtures/file1.json"
+    file2 = "tests/fixtures/file2.json"
+
+    result = generate_diff(file1, file2, "json")
+    # Verificamos que sea un JSON válido parseable por Python
+    parsed_json = json.loads(result)
+    assert isinstance(parsed_json, list)
+    assert len(parsed_json) > 0
