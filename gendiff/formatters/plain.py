@@ -1,5 +1,5 @@
 def stringify(value):
-    if isinstance(value, dict):
+    if isinstance(value, (dict, list)):
         return "[complex value]"
     if isinstance(value, bool):
         return str(value).lower()

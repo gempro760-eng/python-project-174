@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Pruebas y cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.ruff_cache/
+*.cast
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Herramientas y secretos
+.env
+.env.*
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

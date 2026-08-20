@@ -11,7 +11,7 @@ def stringify(value, depth):
 
     indent = " " * (depth * INDENT_SIZE)
     lines = []
-    for key, val in value.items():
+    for key, val in sorted(value.items()):
         lines.append(f"{indent}    {key}: {stringify(val, depth + 1)}")
 
     result = "\n".join(lines)
